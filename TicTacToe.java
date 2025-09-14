@@ -43,3 +43,5 @@ public class TicTacToe {
         return winner;
     }
 }
+//Instead of storing the entire board, we maintain counts for each row, column, and both diagonals.
+//player 1 adds +1, player 2 adds -1. If any count reaches n or -n, that player wins. This reduces space complexity to O(n) and keeps move operation O(1).
